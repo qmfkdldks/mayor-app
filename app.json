@@ -4,11 +4,7 @@
     "slug": "mayor",
     "privacy": "public",
     "sdkVersion": "35.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -20,11 +16,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.visible.mayor",
+      "config": {
+        "googleMaps": { "apiKey": "AIzaSyBNVYbYTDVIs1x5gOIWbPIggZR4Z66uB0o" }
+      }
     }
   }
 }
